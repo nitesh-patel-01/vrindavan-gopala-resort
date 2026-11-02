@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vrindavan-gopala-resort.vercel.app/sitemap.xml
