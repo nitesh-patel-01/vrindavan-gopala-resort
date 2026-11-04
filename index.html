@@ -24,7 +24,7 @@ a{color:var(--green);text-decoration:none} img{max-width:100%}
 h2{font-size:clamp(30px,4.5vw,46px);margin:10px 0 14px;color:var(--green)} .lead{font-size:18px;color:var(--mut);max-width:680px}
 section{padding:84px 0}
 .nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .3s,box-shadow .3s}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 22px}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 22px;flex-wrap:nowrap}
 .nav.transparent{background:linear-gradient(180deg,rgba(0,0,0,.45),transparent);color:#fff}
 .nav.solid{background:var(--green);box-shadow:0 8px 30px rgba(0,0,0,.18);color:#fff}
 .brand{display:flex;align-items:center;gap:11px;color:#fff;font-family:"Playfair Display",serif;font-size:21px;font-weight:600}
@@ -86,7 +86,9 @@ footer .base{border-top:1px solid #3a3f3a;margin-top:32px;padding-top:18px;text-
 @keyframes fadeUp{to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.scroll span:after{animation:none}}
 @media(max-width:820px){
-#menuBtn{display:inline-flex}
+.nav .wrap{padding:10px 16px}
+.brand{font-size:18px} .brand .mark{width:34px;height:34px;font-size:20px} .brand small{font-size:8px;letter-spacing:.14em}
+#menuBtn{display:inline-flex;white-space:nowrap;align-items:center;gap:6px;padding:10px 16px;font-size:14px}
 .nav nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--green);flex-direction:column;padding:18px 22px}
 .nav nav.open{display:flex}
 .two,.room{grid-template-columns:1fr} .two img.main,.room img.main{height:300px} .wedhero .inner{padding:64px 22px}
@@ -103,7 +105,6 @@ section{padding:56px 0} .fgrid{grid-template-columns:1fr} footer .rows{grid-temp
 <nav aria-label="Main navigation">
 <a href="#home" data-i18n="nav_home">Home</a><a href="#stay" data-i18n="nav_stay">Stay &amp; Cottages</a><a href="#weddings" data-i18n="nav_wed">Weddings &amp; Events</a><a href="#experiences" data-i18n="nav_exp">Experiences</a><a href="#gallery" data-i18n="nav_gal">Gallery</a><a href="#reviews" data-i18n="nav_rev">Guest Reviews</a><a href="#contact" data-i18n="nav_con">Contact</a>
 </nav>
-<div class="navtools"><a class="pillbtn callbtn" href="tel:+917509332233" aria-label="Call resort">📞</a><a class="btn gold book" href="#enquiry" data-i18n="nav_book">Book Your Stay</a></div>
 </div></header>
 
 <main>
